@@ -1,4 +1,4 @@
-module github.com/recws-org/recws
+module github.com/ihorserba/recws
 
 go 1.13
 
