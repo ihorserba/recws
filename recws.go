@@ -69,7 +69,7 @@ const (
 
 // CloseAndReconnect will try to reconnect.
 func (rc *RecConn) CloseAndReconnect() {
-	if rc.IsConnecting() {
+	if rc.IsConnecting() || rc.IsExiting() {
 		return
 	}
 	rc.Close()
